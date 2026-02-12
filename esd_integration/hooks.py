@@ -73,6 +73,10 @@ app_license = "mit"
 # Jinja
 # ----------
 
+jinja = {
+	"methods": ["esd_integration.einvoice.get_qr_code"]
+}
+
 # add methods and filters to jinja environment
 # jinja = {
 # 	"methods": "esd_integration.utils.jinja_methods",
@@ -136,6 +140,16 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Hook on document methods and events
+
+doc_events = {	
+    "Sales Invoice": {
+        "on_submit": [
+            "esd_integration.einvoice.sign_einvoice"
+        ]
+    }
+}
+
+
 
 # doc_events = {
 # 	"*": {
