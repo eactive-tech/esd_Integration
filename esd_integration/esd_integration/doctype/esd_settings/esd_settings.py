@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ESDIntegration(Document):
+class ESDSettings(Document):
 	pass

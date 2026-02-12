@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestESDIntegration(FrappeTestCase):
+class TestESDSettings(FrappeTestCase):
 	pass
